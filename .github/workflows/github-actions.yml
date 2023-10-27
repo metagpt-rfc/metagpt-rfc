@@ -45,7 +45,7 @@ jobs:
         path: doc
         token: ${{ secrets.GIT_TOKEN }}
     - name: Print something
-      run: ls -l
+      run: ls -l && ls -l doc
     - name: Move markdown articles to current directory
       run: |
         rm -f doc/README.md 
