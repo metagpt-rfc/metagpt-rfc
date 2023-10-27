@@ -50,7 +50,7 @@ jobs:
       run: |
         rm -f doc/README.md 
         mkdir -p source/_posts 
-        mv doc/* sources/_posts
+        mv doc/* source/_posts
     - name: Install nodejs ${{ matrix.node_version }}
       uses: actions/setup-node@v3
       with:
