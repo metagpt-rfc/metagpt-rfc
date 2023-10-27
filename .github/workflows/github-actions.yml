@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - main
-  merge:
-    branches:
+  pull_request:
+    branchs:
       - main
+    types:
+      - closed
 
 env:
   GIT_USER: metagpt-rfc
