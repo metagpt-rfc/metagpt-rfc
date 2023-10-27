@@ -12,8 +12,8 @@ on:
 
 env:
   GIT_USER: metagpt-rfc
-  HEXO_DOC_REPO: metagpt-rfc/metagpt-rfc
-  HEXO_THEME_REPO: https://github.com/hexojs/hexo-theme-landscape
+  HEXO_DOC_REPO: github.com/metagpt-rfc/metagpt-rfc
+  HEXO_THEME_REPO: github.com/hexojs/hexo-theme-landscape
   GITHUB_PAGES_REPO: github.com/metagpt-rfc/metagpt-rfc.github.io.git
   
 jobs:
