@@ -56,10 +56,10 @@ jobs:
       run: npm run build
     - name: Push to pages
       uses: peaceiris/actions-gh-pages@v3
-        with:
-          repository: ${{ env.GITHUB_PAGES_REPO }}
-          token: ${{ secrets.GIT_TOKEN }}
-          publish_dir: ./public
-          publish_branch: main
+      with:
+        repository: ${{ env.GITHUB_PAGES_REPO }}
+        token: ${{ secrets.GIT_TOKEN }}
+        publish_dir: ./public
+        publish_branch: main
 
 
