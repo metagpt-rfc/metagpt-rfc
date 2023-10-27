@@ -4,14 +4,15 @@ on:
   push:
     branches:
       - main
-      - github-actions
+  merge:
+    branches:
+      - main
 
 env:
   GIT_USER: metagpt-rfc
   HEXO_DOC_REPO: metagpt-rfc/metagpt-rfc
   HEXO_THEME_REPO: https://github.com/hexojs/hexo-theme-landscape
   GITHUB_PAGES_REPO: github.com/metagpt-rfc/metagpt-rfc.github.io.git
-  GITHUB_PAGES_URL: "https://${GIT_USER}:${{ secrets.GIT_TOKEN }}@${GITHUB_PAGES_REPO}"
   
 jobs:
   build:
